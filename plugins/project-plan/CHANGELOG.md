@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.1.1 — 2026-10-23
+
 - Add the MIT license and a release pipeline (CI validation, tagged releases).
 
 ## 0.1.0 — 2026-10-23
