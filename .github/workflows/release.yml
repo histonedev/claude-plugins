@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    tags: ["*--v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  github-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish the GitHub release from the changelog
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          plugin=${TAG%--v*}
+          version=${TAG##*--v}
+          python3 scripts/lib/changelog.py notes "plugins/$plugin/CHANGELOG.md" "$version" > notes.md
+          gh release create "$TAG" --title "$plugin v$version" --notes-file notes.md
