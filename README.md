@@ -9,7 +9,7 @@ In Claude Code:
 /plugin install project-plan@histone
 ```
 
-Restart Claude Code, then do two one-time steps per device:
+Restart Claude Code, then do two one-time steps per device. Full install and usage instructions: [plugins/project-plan/README.md](plugins/project-plan/README.md).
 
 1. **Turn on auto-update**: `/plugin` → Marketplaces → histone → Enable auto-update. New releases then arrive in the background. Without it, run `claude plugin update project-plan@histone`.
 2. **No GitHub SSH key on the device?** Set `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1`, or in-session installs and updates fail. Easiest: add `"CLAUDE_CODE_PLUGIN_PREFER_HTTPS": "1"` under `"env"` in `~/.claude/settings.json` (Windows: `%USERPROFILE%\.claude\settings.json`).
