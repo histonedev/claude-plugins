@@ -1,0 +1,7 @@
+{
+  "name": "project-plan",
+  "version": "0.1.0",
+  "description": "Living project plans in Claude Docs for long, multi-phase, multi-session work: create the plan, start a session, end a session with a handover.",
+  "author": { "name": "Histone" },
+  "keywords": ["planning", "handover", "claude-docs", "multi-session"]
+}

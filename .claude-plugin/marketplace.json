@@ -1,0 +1,16 @@
+{
+  "name": "histone",
+  "owner": { "name": "Histone" },
+  "metadata": {
+    "description": "Claude Code plugins from Histone",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "project-plan",
+      "source": "./plugins/project-plan",
+      "description": "Living project plans in Claude Docs for long, multi-phase, multi-session work: create the plan, start a session, end a session with a handover.",
+      "version": "0.1.0"
+    }
+  ]
+}
